@@ -44,7 +44,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.hhcpro.tools.runnier.App</mainClass>
+							<mainClass>com.hhcpro.tools.runner.App</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
