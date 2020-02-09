@@ -5,7 +5,7 @@ import com.hhcpro.tools.api.HBStatus.modes;
 import com.hhcpro.tools.api.HBStatus;
 
 /**
- * Hello world!
+ * Runner service test
  *
  */
 public class App 
@@ -35,14 +35,17 @@ public class App
     		if(listOfFiles[i].isFile())
     		{
     			System.out.println("File " + listOfFiles[i].getName());
+
     			HBStatus check = new HBStatus();
-    	        check.init(path + listOfFiles[i].getName(), modes.READ);
-    	        System.out.println("Verify: " + check.IsUp());
-    	        hb.down();
-    	        System.out.println("Verify: " + check.IsUp());
-    	        hb.up();
-    	        System.out.println("Verify: " + check.IsUp());
-    	        //check.down();
+    	        	check.init(path + listOfFiles[i].getName(), modes.READ);
+
+    	        	System.out.println("Verify: " + check.IsUp());
+
+    	        	hb.down();
+    	        	System.out.println("Verify: " + check.IsUp());
+
+    	        	hb.up();
+    	        	System.out.println("Verify: " + check.IsUp());
     		}
     		else if(listOfFiles[i].isDirectory()) {
     			System.out.println("Directory " + listOfFiles[i].getName());
