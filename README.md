@@ -1,2 +1,2 @@
 # HBStatus
-Ground work around HB generic impl
+Ground work around HB generic implementation 
