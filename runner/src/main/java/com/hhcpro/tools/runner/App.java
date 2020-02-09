@@ -1,7 +1,8 @@
-package com.hhcpro.tools.keepalive;
+package com.hhcpro.tools.runner;
 
 import java.io.File;
-import com.hhcpro.tools.keepalive.HBStatus.modes;
+import com.hhcpro.tools.api.HBStatus.modes;
+import com.hhcpro.tools.api.HBStatus;
 
 /**
  * Hello world!
@@ -12,7 +13,7 @@ public class App
     public static void main( String[] args )
     {
     	
-    	String path = "C:\\Users\\Oleg\\eclipse-workspace-java\\keepalive\\tests\\";
+    	String path = "tests/";
     	
     	HBStatus hb = new HBStatus();
         
@@ -47,11 +48,5 @@ public class App
     			System.out.println("Directory " + listOfFiles[i].getName());
     		}
     	}
-    	
-    	
-        
-        
-        
-        
     }
 }

@@ -3,7 +3,7 @@ package com.hhcpro.tools.api;
 
 
 
-import com.hhcpro.tools.keepalive.HBStatus.modes;
+import com.hhcpro.tools.api.HBStatus.modes;
 
 import junit.framework.TestCase;
 //import junit.framework.Assert;

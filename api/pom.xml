@@ -7,7 +7,7 @@
   	<artifactId>keepalive</artifactId>
   </parent>
   
-  <!-- groupId>com.hhcpro.tools</groupId-->
+  <groupId>com.hhcpro.tools</groupId>
   <artifactId>api</artifactId>
   <packaging>jar</packaging>
 
