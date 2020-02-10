@@ -20,7 +20,13 @@ public class HBStatusTest extends TestCase {
 	}
 	
 	public void testIsUp() {
-		//assertFalse(st.init(name,modes.WRITE));
+		
+		try {
+		   assertFalse(st.init(name,modes.WRITE));
+		}
+		catch(IllegalArgumentException e) {
+			e.printStackTrace();
+		}
 		st.up(); 
 		assertTrue(st.IsUp());
 		st.down();
