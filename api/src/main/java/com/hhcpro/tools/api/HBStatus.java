@@ -27,7 +27,6 @@ public class HBStatus {
 		}
 		else {
 			throw new IllegalArgumentException("Object already initialized");
-			return false;
 		}
 		
 		mode = (_mode == modes.READ) ? FileChannel.MapMode.READ_ONLY : FileChannel.MapMode.READ_WRITE;
@@ -51,6 +50,10 @@ public class HBStatus {
 			throw new IllegalArgumentException("up() and down() calls are illegal for READ_ONLY access");
 		}
 		
+		if(!this.isInit) {
+			throw new IllegalArgumentException("HB object is not initialized");
+		}
+		
 		try 
 		{
 			MappedByteBuffer out = fc.map(mode,0, length); 
@@ -70,6 +73,11 @@ public class HBStatus {
 		if(mode == FileChannel.MapMode.READ_ONLY) {
 			throw new IllegalArgumentException("up() and down() calls are illegal for READ_ONLY access");
 		}
+		
+		if(!this.isInit) {
+			throw new IllegalArgumentException("HB object is not initialized");
+		}
+
 
 		try 
 		{
