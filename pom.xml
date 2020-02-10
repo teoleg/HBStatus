@@ -4,7 +4,7 @@
 
   <groupId>com.hhcpro.tools</groupId>
   <artifactId>keepalive</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>${parent.version}</version>
   <packaging>pom</packaging>
 
   <name>keepalive</name>
@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <parent.version>0.0.1-SNAPSHOT</parent.version>
   </properties>
 
   <organization>

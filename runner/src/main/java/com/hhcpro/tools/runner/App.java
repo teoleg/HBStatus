@@ -36,7 +36,7 @@ public class App
     		{
     			System.out.println("File " + listOfFiles[i].getName());
 
-    			    HBStatus check = new HBStatus();
+			HBStatus check = new HBStatus();
     	        	check.init(path + listOfFiles[i].getName(), modes.READ);
 
     	        	System.out.println("Verify: " + check.IsUp());
