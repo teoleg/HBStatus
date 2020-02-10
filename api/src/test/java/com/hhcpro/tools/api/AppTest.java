@@ -1,4 +1,4 @@
-package com.hhcpro.tools.keepalive;
+package com.hhcpro.tools.api;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
