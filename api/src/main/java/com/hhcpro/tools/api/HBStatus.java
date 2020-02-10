@@ -17,9 +17,18 @@ public class HBStatus {
 	private MapMode mode = FileChannel.MapMode.READ_WRITE;
 	public enum modes { READ, WRITE };
 	
+	boolean isInit = false;
+	
 	
 	public boolean init(String _n, modes _mode) {
 		
+		if(!this.isInit) {
+			this.isInit = true;
+		}
+		else {
+			throw new IllegalArgumentException("Object already initialized");
+			return false;
+		}
 		
 		mode = (_mode == modes.READ) ? FileChannel.MapMode.READ_ONLY : FileChannel.MapMode.READ_WRITE;
 		
