@@ -113,6 +113,10 @@ public class HBStatus {
 	
 	synchronized public boolean IsUp() 
 	{
+		if(!this.isInit) {
+			throw new IllegalArgumentException("HB object is not initialized");
+		}
+		
 		switch(this.current()) {
 		case EMPTY:
 		case DOWN:
