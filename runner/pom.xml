@@ -32,7 +32,7 @@
       <groupId>com.hhcpro.tools</groupId>
       <artifactId>api</artifactId>
       <version>0.0.1-SNAPSHOT</version>
-      <!--scope>runtime</scope-->
+      <scope>runtime</scope>
     </dependency>
   </dependencies>
   <build>
