@@ -29,6 +29,7 @@ public class HBStatus {
 			throw new IllegalArgumentException("Object already initialized");
 		}
 		
+		
 		mode = (_mode == modes.READ) ? FileChannel.MapMode.READ_ONLY : FileChannel.MapMode.READ_WRITE;
 		
 		try 
